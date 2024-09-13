@@ -7,7 +7,7 @@ import time
 
 
 client = OpenAI(
-    api_key=data.Credentials.API_KEY
+    # api_key=data.Credentials.API_KEY
 )
 
 chat_completion = client.chat.completions.create(

@@ -1,6 +1,6 @@
 class Credentials:
     API_END_POINT = ""
-    API_KEY = "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"
+    # API_KEY = "api-key by OpenAI"
     ASSISTANT_ID = "asst_JDtUqJXfuXqbYagyUpTlf8cA"
 
     assistant_id = "asst_uEdU1nMOyRniqfRYnCNRa9gv"
