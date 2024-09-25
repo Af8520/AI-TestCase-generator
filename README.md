@@ -36,4 +36,16 @@ If the input functionality is "Login to the app," the AI Test Case Generator wil
 | TC03         | Leave username and password fields empty and click 'Login'    | Error message prompts user to enter credentials | GUI          |
 
 
+## Example
+If the input feature is "api::parms(8)(yes)" (where parameters must have a maximum length of 8 digits and are mandatory), the AI Test Case Generator will create test cases like:
+
+| Test Case ID | Steps                                                                                 | Expected Results                                              | Type of Test  |
+|--------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------|---------------|
+| TC01         | Send a request with all mandatory parameters having valid values (8 digits)           | Response status is 200 OK, request is successful               | Functional    |
+| TC02         | Send a request with one of the mandatory parameters missing                           | Response status is 400 Bad Request, error message displayed    | Negative      |
+| TC03         | Send a request with a parameter exceeding 8 digits                                    | Response status is 400 Bad Request, error message displayed    | Boundary      |
+| TC04         | Send a request with all parameters valid, but API server is down                      | Response status is 500 Internal Server Error                   | Negative      |
+| TC05         | Send a request with empty body (no parameters)                                        | Response status is 400 Bad Request, validation error displayed | Negative      |
+| TC06         | Send a request with special characters in one of the parameters                       | Response status is 400 Bad Request, validation error displayed | Security      |
+| TC07         | Send a request with correct parameters but unexpected input in optional parameters    | Response status is 200 OK, request processed successfully      | Functional    |
 
