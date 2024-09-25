@@ -27,11 +27,13 @@ AI Test Case Generator is an intelligent tool designed to automatically generate
 
 
 ## Example
-If the input functionality is "Login" the AI Test Case Generator will create test cases like:
+If the input functionality is "Login to the app," the AI Test Case Generator will create test cases like:
 
-Test Case ID	Steps	Expected Results	Type of Test
-TC01	Enter valid username and password and click 'Login'	User is successfully logged in	Functional
-TC02	Enter invalid username and password and click 'Login'	Error message is displayed	Negative
-TC03	Leave username and password fields empty and click 'Login'	Error message prompts user to enter credentials	GUI
+| Test Case ID | Steps                                                         | Expected Results                             | Type of Test |
+|--------------|---------------------------------------------------------------|----------------------------------------------|--------------|
+| TC01         | Enter valid username and password and click 'Login'           | User is successfully logged in               | Functional   |
+| TC02         | Enter invalid username and password and click 'Login'         | Error message is displayed                   | Negative     |
+| TC03         | Leave username and password fields empty and click 'Login'    | Error message prompts user to enter credentials | GUI          |
+
 
 
